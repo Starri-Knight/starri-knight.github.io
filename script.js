@@ -56,7 +56,7 @@ function fetchImages() {
     for (let i = startImage; i <= endImage; i++) {
         for (let j = 0; j < 15; j++) {
             const type = ['face', 'back', 'bg', 'fg', 'frame', 'hair', 'hat', 'top', 'acceh', 'accef', 'accen', 'bottom', 'coat', 'pose', 'shoe'][j];
-            const imageUrl = `http://image.cocoppaplay.com/image1/shop/clothes/${type}/m_${type}_${i}_1_shop.png`;
+            const imageUrl = `https://image.cocoppaplay.com/image1/shop/clothes/${type}/m_${type}_${i}_1_shop.png`;
             fetch(imageUrl)
                 .then(response => handleResponse(response, type))
                 .catch(error => {
