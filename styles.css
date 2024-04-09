@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+input, button {
+    margin: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+button:hover {
+    background-color: #ff8cbb;
+}
+
+#progressContainer {
+    margin: 20px auto;
+    width: 80%; /* Adjust width as needed */
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+}
+
+#progressBar {
+    width: 0;
+    height: 20px;
+    background-color: #ff69b4;
+    border-radius: 5px;
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+}
+
+.image-placeholder span {
+    font-size: 14px;
+    color: #333;
+}
+
+#loadMoreBtn {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: #fff;
+    cursor: pointer;
+}
+
+#loadMoreBtn:hover {
+    background-color: #ff8cbb;
+}
+
+#imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
