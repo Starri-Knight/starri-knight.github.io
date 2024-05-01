@@ -56,7 +56,7 @@ function fetchImages() {
     for (let i = startImage; i <= endImage; i++) {
         for (let j = 0; j < 15; j++) {
             const type = ['200', '210', '220', '230', '240', '201', '211', '221', '231', '241'][j];
-            const imageUrl = `http://image.cocoppaplay.com/image1/theme/${type}${i}/L/m_theme_${type}${i}_shop.png`;
+            const imageUrl = `https://image.cocoppaplay.com/image1/theme/${type}${i}/L/m_theme_${type}${i}_shop.png`;
             fetch(imageUrl)
                 .then(response => handleResponse(response, type))
                 .catch(error => {
